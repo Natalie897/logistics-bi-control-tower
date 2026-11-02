@@ -1,0 +1,9 @@
+id,type,priority,requirement,acceptance_test,owner,status
+BR-01,Business,Must,Единое определение on-time delivery,UAT-01,BI analyst,Specified
+BR-02,Business,Must,Сравнение регионов,UAT-02,BI analyst,Specified
+BR-03,Business,Must,Отдельная доля отмен,UAT-03,BI analyst,Specified
+FR-01,Functional,Must,Срез по месяцу покупки,UAT-04,BI developer,Specified
+FR-02,Functional,Must,Матрица регионов и типов доставки,UAT-05,BI developer,Specified
+NFR-01,Quality,Must,Отклонение загрузки при отрицательной цене,UAT-06,Data engineer,Specified
+NFR-02,Quality,Must,Защита гранулярности 1 строка на заказ,UAT-07,Data engineer,Specified
+NFR-03,Quality,Must,Корректное определение метрик стоимости,UAT-08,BI analyst,Specified

@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+*.log
+.pbi/
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+.DS_Store
+# Do not commit entire original Olist data archive
+/data/raw_olist/*.csv

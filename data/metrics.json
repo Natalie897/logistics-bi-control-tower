@@ -1,0 +1,157 @@
+{
+  "totals": {
+    "n": 3600,
+    "delivered": 3435,
+    "ontime": 1136,
+    "late": 2299,
+    "canceled": 165,
+    "gross": 666616.84,
+    "ontime_pct": 33.07
+  },
+  "monthly": [
+    {
+      "month": "2025-01",
+      "orders": 332,
+      "ontime": 104,
+      "delivered": 313,
+      "gross": 61347.99
+    },
+    {
+      "month": "2025-02",
+      "orders": 268,
+      "ontime": 85,
+      "delivered": 256,
+      "gross": 48348.9
+    },
+    {
+      "month": "2025-03",
+      "orders": 279,
+      "ontime": 87,
+      "delivered": 268,
+      "gross": 49984.3
+    },
+    {
+      "month": "2025-04",
+      "orders": 302,
+      "ontime": 87,
+      "delivered": 290,
+      "gross": 57657.0
+    },
+    {
+      "month": "2025-05",
+      "orders": 308,
+      "ontime": 113,
+      "delivered": 297,
+      "gross": 55526.79
+    },
+    {
+      "month": "2025-06",
+      "orders": 313,
+      "ontime": 92,
+      "delivered": 295,
+      "gross": 56172.54
+    },
+    {
+      "month": "2025-07",
+      "orders": 334,
+      "ontime": 108,
+      "delivered": 314,
+      "gross": 64314.92
+    },
+    {
+      "month": "2025-08",
+      "orders": 321,
+      "ontime": 105,
+      "delivered": 311,
+      "gross": 58707.07
+    },
+    {
+      "month": "2025-09",
+      "orders": 275,
+      "ontime": 87,
+      "delivered": 264,
+      "gross": 53565.86
+    },
+    {
+      "month": "2025-10",
+      "orders": 282,
+      "ontime": 86,
+      "delivered": 267,
+      "gross": 50607.34
+    },
+    {
+      "month": "2025-11",
+      "orders": 288,
+      "ontime": 92,
+      "delivered": 274,
+      "gross": 54977.92
+    },
+    {
+      "month": "2025-12",
+      "orders": 298,
+      "ontime": 90,
+      "delivered": 286,
+      "gross": 55406.21
+    }
+  ],
+  "regions": [
+    {
+      "region": "Southeast",
+      "orders": 1569,
+      "ontime": 689,
+      "delivered": 1503,
+      "gross": 288525.8
+    },
+    {
+      "region": "South",
+      "orders": 815,
+      "ontime": 278,
+      "delivered": 769,
+      "gross": 147245.88
+    },
+    {
+      "region": "Northeast",
+      "orders": 806,
+      "ontime": 62,
+      "delivered": 776,
+      "gross": 151804.58
+    },
+    {
+      "region": "Central-West",
+      "orders": 277,
+      "ontime": 103,
+      "delivered": 264,
+      "gross": 51767.43
+    },
+    {
+      "region": "North",
+      "orders": 133,
+      "ontime": 4,
+      "delivered": 123,
+      "gross": 27273.15
+    }
+  ],
+  "services": [
+    {
+      "service": "standard",
+      "orders": 2145,
+      "ontime": 669,
+      "delivered": 2033,
+      "gross": 378418.32
+    },
+    {
+      "service": "express",
+      "orders": 737,
+      "ontime": 238,
+      "delivered": 713,
+      "gross": 165045.07
+    },
+    {
+      "service": "economy",
+      "orders": 718,
+      "ontime": 229,
+      "delivered": 689,
+      "gross": 123153.45
+    }
+  ]
+}

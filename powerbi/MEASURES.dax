@@ -1,0 +1,30 @@
+// Create each measure in Modeling > New measure, one at a time.
+// All expressions use the imported table names verbatim.
+
+Total Orders = DISTINCTCOUNT(fact_orders[order_id])
+
+Delivered Orders = CALCULATE([Total Orders], fact_orders[status] = "delivered")
+
+Canceled Orders = CALCULATE([Total Orders], fact_orders[status] = "canceled")
+
+Late Orders = CALCULATE([Total Orders], fact_orders[is_late] = 1)
+
+On Time Orders = CALCULATE([Total Orders], fact_orders[is_late] = 0)
+
+On Time Rate = DIVIDE([On Time Orders], [Delivered Orders])
+
+Cancellation Rate = DIVIDE([Canceled Orders], [Total Orders])
+
+Gross Order Value = SUM(fact_orders[order_value])
+
+Average Order Value = DIVIDE([Gross Order Value], [Total Orders])
+
+Unique Customers = DISTINCTCOUNT(fact_orders[customer_id])
+
+Avg Delivery Days = CALCULATE(AVERAGE(fact_orders[days_to_deliver]), fact_orders[status] = "delivered")
+
+Average Late Days = CALCULATE(AVERAGE(fact_orders[delay_days]), fact_orders[is_late] = 1)
+
+Prev Month Gross Value = CALCULATE([Gross Order Value], DATEADD(dim_date[calendar_date], -1, MONTH))
+
+MoM Gross Value % = DIVIDE([Gross Order Value] - [Prev Month Gross Value], [Prev Month Gross Value])
